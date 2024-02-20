@@ -1,0 +1,49 @@
+<div class="tasks">
+  <div class="header">
+      <div class="image" style="text-align: center;">
+          <img src="./assets/img/1.png" alt="INDEP">
+      </div>
+      <div class="container-header" style="margin-top: 25px;">
+          <!-- Agrega el encabezado aquí si es necesario -->
+      </div>
+      <div class="content" style="background: linear-gradient(to bottom,  #006465, #9adcb9);">
+          <table class="table" style="color: aliceblue;">
+            
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Correo</th>
+                    <th>Contraseña</th>
+                    <th>Acciones</th> <!-- Agregamos una columna para las acciones -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of users; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td>
+                      <!-- Botón de Actualizar -->
+                      <button (click)="updateUser(user._id)">Actualizar</button>
+                      <!-- Botón de Eliminar -->
+                      <button (click)="deleteUser(user._id)">Eliminar</button>
+                    </td>
+                </tr>
+              </tbody>
+            
+          </table>
+      </div>
+  </div>
+  <div class="bottom">
+      <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 25px;">Secciones</a>
+      <div class="SignUp">
+          <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/tasks">Bienes</a>
+      </div>
+      <div class="SignIn">
+          <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signin">SignIn</a>
+      </div>
+      <div class="bienes">
+          <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signup">SignUp</a>
+      </div>
+  </div>
+</div>

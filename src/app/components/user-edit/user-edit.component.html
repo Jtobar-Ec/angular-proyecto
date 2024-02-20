@@ -1,0 +1,15 @@
+<div>
+    <h2>Editar Usuario</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
+      </div>
+      <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
+      </div>
+      <button type="submit">Guardar Cambios</button>
+    </form>
+  </div>
+  

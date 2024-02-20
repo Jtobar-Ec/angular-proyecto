@@ -1,0 +1,69 @@
+<div class="tasks">
+    <div class="header">
+        <div class="image" style="text-align: center; " >
+
+            <img  src="./assets/img/1.png" alt="INDEP">
+
+        </div>
+        
+        
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    SignUp
+                </div>
+                <div class="card-body">
+                    <form (submit)="signUp()">
+                        <div class="form-group">
+                           
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                             <input type="email"[(ngModel)]="user.email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required autofocus>
+                        </div>
+                        <div class="form-group">
+                           
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" [(ngModel)]="user.password" name="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                            <div id="passwordHelpBlock" class="form-text">
+                              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            SignUp
+                        </button>
+
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+<div class="bottom">
+
+    <a style=" text-align: center; color: aliceblue;margin-left: 50px; font-size: 25px;" >Secciones</a>
+  
+    <div class="SignUp">
+        <a style=" text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/tasks" >Bienes</a>
+    </div>
+    <div class="SignIn">
+        <a style=" text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signin">SignIn</a>
+    </div>
+    <div class="bienes">
+        <a style=" text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signup">SignUp</a>
+    </div>    
+</div>  
+   
+</div>

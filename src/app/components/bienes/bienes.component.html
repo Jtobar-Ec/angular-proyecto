@@ -1,0 +1,116 @@
+
+<div class="tasks">
+    <div class="header">
+        <div class="image" style="text-align: center; ">
+            <img src="./assets/img/1.png" alt="INDEP">
+        </div>
+        <div class="container-header" style="margin-top: 25px;">
+            <!-- Agrega el encabezado aquí si es necesario -->
+        </div>
+    </div>
+    <div class="content" style="background: linear-gradient(to bottom,  #006465, #9adcb9);">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <table class="table" style="color: aliceblue; ">
+                <thead>
+                  <tr>
+                    
+                  
+                   
+                  
+                   
+                    
+                    
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Consecutivo</th>
+                        <td *ngFor="let dato of datos">
+                            <div>{{dato.Consecutivo}}</div>
+                            
+                            </td>
+                    </tr>
+
+
+                  <tr>
+                    <th scope="row">Año</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.Anio}}</div>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">TipoEvento</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.TipoEvento}}</div>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evento</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.Evento}}</div>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">FechaConvocatoria</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.FechaConvocatoria}}</div>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">FechaFallo</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.FechaFallo}}</div>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">TipoBien</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.TipoBien}}</div>
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">DescripcionLote</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.DescripcionLote}}</div>
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Estado</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.Estado}}</div>
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Resultado</th>
+                    <td *ngFor="let dato of datos">
+                        <div>{{dato.Resultado}}</div>
+                        
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </div>
+    </div>
+    <div class="bottom">
+        <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 25px;">Secciones</a>
+        <div class="SignUp">
+            <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/tasks">Bienes</a>
+        </div>
+        <div class="SignIn">
+            <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signin">SignIn</a>
+        </div>
+        <div class="bienes">
+            <a style="text-align: center; color: aliceblue;margin-left: 50px; font-size: 15px;" routerLink="/signup">SignUp</a>
+        </div>    
+    </div>  
+</div>

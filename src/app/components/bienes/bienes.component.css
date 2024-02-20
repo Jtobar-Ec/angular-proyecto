@@ -1,0 +1,29 @@
+
+.tasks{
+
+   
+    height: 1800px;
+    width: 1900px;
+    background: linear-gradient(to bottom,  #006465, #9adcb9);
+    
+
+}
+.bottom{
+  
+    width: 1470px;
+    height: 150px;
+   
+}
+
+.signin{
+
+    margin-top: 25px;
+}
+.content{
+
+    width:50%;
+    text-align: center;
+
+    width: 1900px;
+    
+}

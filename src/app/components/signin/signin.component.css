@@ -1,0 +1,21 @@
+
+.tasks{
+
+   
+    height: 1300px;
+    width: fit-content;
+    background: linear-gradient(to bottom,  #006465, #484848);
+    
+
+}
+.bottom{
+  
+    width: 1470px;
+    height: 200px;
+    margin-top: 500px;
+}
+
+.signin{
+
+    margin-top: 25px;
+}
